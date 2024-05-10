@@ -30,5 +30,23 @@ class method{
             }
             return newitem;
         }
+
+        // Method for DeletePrize
+        
+    static int[] Deleteprize(int currentprize[],int idx){
+        int newprize[] = new int[currentprize.length-1];
+        for(int i=0; i < currentprize.length; i++){
+            if(i < idx){
+                newprize[i] = currentprize[i];
+            }
+            else if(i == idx){
+                continue;
+            }else{
+                newprize[i-1] = currentprize[i];
+            }
+        }
+        return newprize;  
+    }
+
     
 }

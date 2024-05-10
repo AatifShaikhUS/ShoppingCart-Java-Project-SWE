@@ -15,5 +15,20 @@ class method{
         }
         return newprize;
     }
-   
+        // Add Method for Add Items
+        static String[] AddItem(String s[], int idx, String additem){
+            String newitem[] = new String[s.length+1];
+            for(int i=0; i < newitem.length; i++){
+                if(i < idx){
+                    newitem[i] = s[i];
+                }
+                else if(i <= idx){
+                    newitem[i] = additem;
+                }else{
+                    newitem[i] = s[i-1];
+                }
+            }
+            return newitem;
+        }
+    
 }

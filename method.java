@@ -74,5 +74,24 @@ class method{
         }
         return sum;
     }
+
+    // Add Search Method 
     
+    static int SearchItem(String s[], String itemname){
+        boolean flag = false;
+        int i;
+        for (i= 0; i < s.length; i++) {
+            if(s[i].equals(itemname)){
+                flag = true;
+                break;
+            }
+        }
+        if(flag){
+            System.out.println(itemname+" Found at index: "+i);
+        }else{
+            System.out.println("Not Found.");
+        }
+        return -1;
+    }
+   
 }

@@ -47,6 +47,23 @@ class method{
         }
         return newprize;  
     }
+     
+    // Add Delete Item Method 
+    
+    static String[] DeleteItem(String currItem[], int idx){
+        String[] newItems = new String[currItem.length-1];
+        for (int i = 0; i < currItem.length; i++) {
+            if(i < idx){
+                newItems[i] = currItem[i];
+            }
+            else if(i == idx){
+                continue;
+            }else{
+                newItems[i-1] = currItem[i];
+            }
+        }
+        return newItems;
+    }
 
     
 }

@@ -1,3 +1,4 @@
+package src;
 class method{
     static int[] AddPrize(int currentprize[],int idx,int changeprize){
         
